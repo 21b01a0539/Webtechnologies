@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Registration page</title>
+    </head>
+    <body>
+	<form name="f1" action="./RegisterServlet" method="post">
+        <center>
+            <h3 align="center">REGISTRATION PAGE</h3>
+            <table cellspacing="2" cellpadding="10">
+                <tr>
+                    <td>NAME</td>
+                    <td><input type="text" name="username" required></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password" required> </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email" required> </td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td><input type="text" name="phone" required> </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td><input type="radio" name="gen" required>Female </td>
+                    <td><input type="radio" name="gen" required>Male</td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td><select name="day">
+                        <option value="1">1</option>
+                        <option value ="2">2</option>
+                        <option value="3">3</option>
+                    </select></td>
+                    <td>Month</td>
+                    <td><select name="day">
+                        <option value="1">feb</option>
+                        <option value ="2">march</option>
+                        <option value="3">april</option>
+                    </select></td>
+                    <td>Year</td>
+                    <td><select name="year">
+                        <option value="1">feb</option>
+                        <option value ="2">march</option>
+                        <option value="3">april</option>
+                    </select></td>
+                    </tr>
+                    <tr>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td>Languages known</td>
+                        <td>
+                            <input type="checkbox" value="eng" name="lang">English
+                            <input type="checkbox" value="tel" name="lang">Telugu
+                            <input type="checkbox" value="hin" name="lang">Hindhi
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="reset" name="RESET"></td>
+                        <td><input type="submit" name="SUBMIT"></td>
+                    </tr>
+            </table>
+        </center>
+	</form>
+    </body>
+</html>
