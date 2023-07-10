@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Common styles for all views */
+        .section {
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        /* Desktop view */
+        @media (min-width: 992px) {
+            .container {
+                display: flex;
+            }
+            .section {
+                flex: 1;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .section {
+                flex : 1;
+            }
+            .section:nth-child(3) {
+                flex-basis: 100%;
+                order: 3; /* Set the order of the third section to be displayed below the first two sections */
+            }
+        }
+
+
+
+        /* Mobile view */
+        @media (max-width: 767px) {
+            .section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Page Heading</h1>
+    <div class="container">
+        <div class="section" style="background-color: red;">
+            <p>Section 1</p>
+        </div>
+        <div class="section" style="background-color: green;">
+            <p>Section 2</p>
+        </div>
+        <div class="section" style="background-color: blue;">
+            <p>Section 3</p>
+        </div>
+    </div>
+</body>
+</html>
